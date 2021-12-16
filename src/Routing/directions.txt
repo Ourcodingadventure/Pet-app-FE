@@ -1,0 +1,49 @@
+backend
+refactor 
+authenticate new apis
+
+// when you logged in, you need information about the user pet he owns, the pet he has saved in cart
+so in search we can show that its already saved, remove it, its your pet return it or waherver like this
+
+// all of the pets appaeraeed and we are logged in, 
+// we would have to check the saved pets in cart, and if the pet matches we would show remove from cart instead
+of add to cart
+
+// 
+pets = []
+savedPets = []
+
+pets.map((v)=>{
+    savedPets.map((m)=>{
+        if(v._id === m_id){
+            v.isMine = true;
+        }
+    })
+})
+
+// Inside card component pass isMine prop, if its true show remove from cart
+
+
+
+need to connect add to cart button or remove from cart
+front end-----
+
+
+---------------Pet Page-------------------
+
+-	There should be a button for the owner of pet to return the pet to the adoption center (if they are fostering the pet or adopted it)
+-	If the person is not the owner they should see a button to adopt and a button to foster. (If they are already fostering, they should see a button to adopt)
+-	There should be an additional button to save for later (Or unsave if already saved)
+
+------------Admin Pages------------
+
+
+
+Dashboard
+
+Components: 
+-	List of all the users in the database (pet owners and administrators) 
+-	Clicking on a user should display all the pets that the user owns along with all of their profile details so the administrators can contact the user. 
+
+-	List of all pets and ability to go to the pet page and edit. (The edit should be just like adding a pet but with the details already displayed there)
+
